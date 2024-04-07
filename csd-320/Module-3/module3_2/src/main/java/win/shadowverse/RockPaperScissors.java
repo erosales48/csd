@@ -45,17 +45,17 @@ public class RockPaperScissors {
             }
 
             String[] factors = {"Rock", "Paper", "Scissors"};
-            int robotChoice = random.nextInt(3); // Generates a random number between 1 and 3
+            int robotChoice = (random.nextInt(3) + 1); // Generates a random number between 1 and 3
 
             System.out.println("You have chosen: " + factors[userChoice - 1]);
-            System.out.println("The Evil Automaton robot chose: " + factors[robotChoice]);
+            System.out.println("The Evil Automaton robot chose: " + factors[robotChoice - 1]);
 
             // Determine the winner
-            if (userChoice == robotChoice + 1) {
+            if (userChoice == robotChoice) {
                 System.out.println("It's a Tie... are you a robot sympatizer?");
-            } else if ((userChoice == 1 && robotChoice == 1) ||
-                       (userChoice == 2 && robotChoice == 2) ||
-                       (userChoice == 3 && robotChoice == 0)) {
+            } else if ((userChoice == 1 && robotChoice == 2) ||
+                       (userChoice == 2 && robotChoice == 3) ||
+                       (userChoice == 3 && robotChoice == 1)) {
                 System.out.println("The Automatons win, report to your democracy officer!");
             } else {
                 System.out.println("You have won, continue spreading managed democracy!");
