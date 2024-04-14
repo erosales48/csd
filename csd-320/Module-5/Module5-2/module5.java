@@ -35,3 +35,6 @@ public class module5-2 {
         System.out.println("\nSum: " + sum2);
     }
 }
+public class Module5_2 {
+
+}
