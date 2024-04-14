@@ -12,7 +12,7 @@
  */
 public class Module5_2 {
     public static void main(String[] args) {
-        // Smaller to larger order
+        // Smaller to larger
         double sum1 = 0;
         System.out.println("Smaller to Larger Order:");
         int denominator = 3;
@@ -23,7 +23,7 @@ public class Module5_2 {
         }
         System.out.println("\nSum: " + sum1);
 
-        // Larger to smaller order
+        // Larger to smaller
         double sum2 = 0;
         System.out.println("\nLarger to Smaller Order:");
         denominator = 99;
