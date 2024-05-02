@@ -1,0 +1,8 @@
+-- Displaying the 'Select' column from the 'Bike' table
+SELECT [Select] FROM Bike;
+
+-- Displaying 'Table' column from the 'Bike' table
+SELECT [Table] FROM Bike;
+
+--Displaying both 'Select' and 'Table' columns from 'Bike' table
+SELECT [Select], [Table] FROM Bike;
