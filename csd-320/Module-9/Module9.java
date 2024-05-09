@@ -8,7 +8,7 @@
  * 1. The highest value entered.
  * 2. The loweest value entered.
  * 3. The average of numbers entered.
- * 4. The sum of teh numbers entered.
+ * 4. The sum of the numbers entered.
  */
 
 import java.util.*;
@@ -49,24 +49,26 @@ public class Module9{
     // Main Method
     public static void main(String [] args){
         List <Integer>  list = new ArrayList <>();
-        Random random = new Random();
-     
+        Random random = new Random(); 
+        // Could add a Method to ask for user to enter 20 integers, but this is cleaner.
+        // Could also just ask user to determine the range between 1 and <2 - 2147483647>.
         for(int i = 0; i < 20; ++i){
-            list.add(random.nextInt(100) + 1);
+            list.add(random.nextInt(200) + 1);
         }
+        // Print out the whole list so it can be compared to answers.
         System.out.println("List of random integers:");
         System.out.println(list);
-        
+        // Call method to get highest value and print it out.
         int max = topVal(list);
         System.out.println("\nHighest value in the List = " + max);
-        
+        // Call method to get lowest value and print it out.
         int min = minVal(list);
-        System.out.println("\nLowest value in the list: " + min);
-
+        System.out.println("\nLowest value in the list = " + min);
+        // Call method to get sum of all values and print it out.
         int sum = summed(list);
-        System.out.println("\nSum of all the numbers in the list: " + sum);
-
+        System.out.println("\nSum of all the numbers in the list = " + sum);
+        // Call method to get sum of all values then divide it by the number of values to get average and print it out.
         int avg = (summed(list) / list.size());
-        System.out.println("\nAverage of all numbers in the list: " + avg + "\n");
+        System.out.println("\nAverage of all numbers in the list = " + avg + "\n");
     }
 }
