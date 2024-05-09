@@ -67,6 +67,6 @@ public class Module9{
         System.out.println("\nSum of all the numbers in the list: " + sum);
 
         int avg = (summed(list) / list.size());
-        System.out.println("\nAverage of all numbers in the list: " + avg + "\+n");
+        System.out.println("\nAverage of all numbers in the list: " + avg + "\n");
     }
 }
