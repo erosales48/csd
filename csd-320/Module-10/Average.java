@@ -85,7 +85,7 @@
          short[] shortArray = {1, 5, 7, 11, 13, 17};
          int[] intArray = {35000, 425435, 423545, 9872456, 345678};
          long[] longArray = {2147483700L, 4147600647L, 3147483647L, 5147483647L, 6147483647L};
-         double[] doubleArray = {66.6, 392.5, 3.14, 535.35};
+         double[] doubleArray = {66.6, 392.5, 3.14, 45535.35};
  
          // Display original arrays
          System.out.print("Original Short Array: ");
